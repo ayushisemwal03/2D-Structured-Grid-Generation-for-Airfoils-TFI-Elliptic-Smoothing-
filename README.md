@@ -78,7 +78,7 @@ The zoomed comparison is the clearest evidence of what the elliptic step actuall
 
 ---
 
-## 4. A note on grid topology (worth knowing before discussing this project)
+## 4. Grid topology
 
 The accompanying project report describes this as a **C-grid**, which is the standard topology choice for airfoil grids (it opens a wake-cut branch downstream of the trailing edge, giving a clean rectangular computational domain with independent inner/outer boundary treatment). **Looking at the actual code and the resulting plots, what's implemented here is an O-grid**, not a C-grid: the far-field boundary is swept through a full 2π (`x_top = radius·cos(2πξ)`, a complete circle, not a semi-circle), the airfoil boundary is likewise treated as a closed periodic loop, and the code explicitly enforces periodicity at the ξ = 0/1 seam (`X_new[-1,:] = X_new[0,:]` and wraparound neighbor indexing) rather than defining a wake-cut branch line. The two side "boundaries" (A/B and C/D corners) also collapse to the same point pairs rather than defining distinct wake-cut edges, consistent with an O-grid rather than a C-grid.
 
