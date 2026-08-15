@@ -100,9 +100,8 @@ This isn't a flaw — O-grids are a legitimate and commonly used topology for ai
 ```
 .
 ├── README.md
-├── src/
-│   ├── SOLVER.py                    # grid generation script (TFI + elliptic solver)
-│   └── NACA63412coordinates.csv     # digitized NACA 63-412 airfoil coordinates (mm)
+├── SOLVER.py                    # grid generation script (TFI + elliptic solver)
+├── NACA63412coordinates.csv     # digitized NACA 63-412 airfoil coordinates (mm)
 ├── results/
 │   ├── grid_generation_using_tfi_full.png
 │   ├── grid_generation_using_tfi_zoom.png
