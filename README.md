@@ -1,4 +1,4 @@
-# 2D Structured Grid Generation for a NACA 63-412 Airfoil (TFI + Elliptic Smoothing)
+# Structured Grid Generation for Airfoil using Hybrid Algebraic Elliptic Methods
 
 A from-scratch Python implementation of two classical structured mesh generation techniques — Transfinite Interpolation (TFI) and Elliptic Grid Generation — applied to build a computational grid around a NACA 63-412 airfoil for CFD preprocessing.
 
